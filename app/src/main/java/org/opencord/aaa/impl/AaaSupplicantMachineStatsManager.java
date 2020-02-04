@@ -37,7 +37,7 @@ public class AaaSupplicantMachineStatsManager
         implements AaaMachineStatisticsService {
 
     private final Logger log = getLogger(getClass());
-
+    private AaaSupplicantMachineStats aaaSupplicantMachineStats;
     private AaaMachineStatisticsDelegate machineStatDelegate;
 
     @Activate
@@ -119,6 +119,12 @@ public class AaaSupplicantMachineStatsManager
                     aaaMachineStatisticsEvent.subject());
             post(aaaMachineStatisticsEvent);
         }
+    }
+
+    @Override
+    public void resetAllMachineCounters(AaaSupplicantMachineStats aaaSupplicantMachineStats) {
+           aaaSupplicantMachineStats.resetAllMachineCounters(aaaSupplicantMachineStats);
+
     }
 
 }

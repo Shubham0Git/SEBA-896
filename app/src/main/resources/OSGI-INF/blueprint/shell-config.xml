@@ -28,5 +28,11 @@
         <command>
             <action class="org.opencord.aaa.impl.AaaShowCountersCommand"/>
         </command>
+        <command>
+            <action class="org.opencord.aaa.impl.AaaShowPerMachineCountersCommand"/>
+        </command>
+        <command>
+            <action class="org.opencord.aaa.impl.AaaResetMachineCounterCommand"/>
+        </command>
     </command-bundle>
 </blueprint>

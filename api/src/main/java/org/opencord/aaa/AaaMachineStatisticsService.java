@@ -45,4 +45,11 @@ public interface AaaMachineStatisticsService
      */
     void logAaaSupplicantMachineStats(AaaSupplicantMachineStats obj);
 
+    /**
+     * Reset all the values of aaaMachine Stats.
+     *
+     * @param aaaMachineStatsManager of AaaSupplicantMachineStats.
+     */
+    public void resetAllMachineCounters(AaaSupplicantMachineStats aaaMachineStatsManager);
+
 }

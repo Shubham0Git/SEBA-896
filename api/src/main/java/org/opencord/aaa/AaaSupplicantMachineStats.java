@@ -138,4 +138,14 @@ public class AaaSupplicantMachineStats {
                 this.sessionTerminateReason = sessionTerminateReason;
         }
 
+        public void resetAllMachineCounters(AaaSupplicantMachineStats aaaSupplicantMachineStats) {
+                aaaSupplicantMachineStats.setSessionDuration(0);
+                aaaSupplicantMachineStats.setTotalOctetRecieved(0);
+                aaaSupplicantMachineStats.setTotalFramesReceived(0);
+                aaaSupplicantMachineStats.setTotalFramesSent(0);
+                aaaSupplicantMachineStats.setTotalOctetSent(0);
+                aaaSupplicantMachineStats.setTotalPacketsRecieved(0);
+                aaaSupplicantMachineStats.setTotalPacketsSent(0);
+        }
+
 }
